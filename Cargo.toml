@@ -1,0 +1,13 @@
+[package]
+name = "fake-mp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tonic = "*"
+prost = "0.13"
+anyhow = "1.0"
+tokio = { version = "1.0", features = ["rt-multi-thread", "macros"] }
+
+[build-dependencies]
+tonic-build = "*"
